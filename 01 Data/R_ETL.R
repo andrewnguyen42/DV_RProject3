@@ -9,21 +9,10 @@ df <- rename(df, YR = Year)
 df <- rename(df, Game = G)
 
 
+
 # str(df) # Uncomment this and  run just the lines to here to get column types to use for getting the list of measures.
 
-measures <- c("Rk","Age","G","GS","MP","FG","FGA","FG%","3P","3PA","3P%","2P","2PA","2P%","eFG%","FT","FTA","FT%","ORB","DRB","TRB","AST","STL","BLK","TOV","PF","PTS","Year")
-measures[measures == "FG%"] <- "FGPCNT"
-measures[measures == "3P"] <- "THREEP"
-measures[measures == "3PA"] <- "THREEPA"
-measures[measures == "3P%"] <- "THREEPPCNT"
-measures[measures == "2P"] <- "TWOP"
-measures[measures == "2PA"] <- "TWOPA"
-measures[measures == "2P%"] <- "TWOPPCNT"
-measures[measures == "eFG%"] <- "eFGPCNT"
-measures[measures == "FT%"] <- "FTPCNT"
-measures[measures == "Year"] <- "YR"
-measures[measures == "G"] <- "Game"
-
+measures <- c("Rk","Age","Game","GS","MP","FG","FGA","FG_","X3P","X3PA","X3P_","X2P","X2PA","X2P_","eFG_","FT","FTA","FT_","ORB","DRB","TRB","AST","STL","BLK","TOV","PF","PTS","YR")
 
 
 
