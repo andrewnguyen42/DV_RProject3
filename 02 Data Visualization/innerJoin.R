@@ -10,9 +10,9 @@ ggplot() +
   coord_cartesian() + 
   scale_x_continuous() +
   scale_y_log10() +
-  labs(title="Mass of Discovered Planets Over Time",y="Mass of Planet (Jupiter Mass)",x="Year Published",color="Method of Discovery")+
-  layer(data=df2,
-        mapping=aes(x=as.numeric(as.character(DATE_0)),y=as.numeric(as.character(MASS)),color=PLANETDISCMETH),
+  labs(title="Playoffs Minutes vs Regular Season Minutes",y="Playoffs Minutes",x="Regular Season Minutes",color="Team")+
+  layer(data=joinedPlayoffsRegular,
+        mapping=aes(x=as.numeric(MP.x),y=as.numeric(MP.y),color=TM),
         stat="identity",
         stat_params=list(),
         geom="point",
